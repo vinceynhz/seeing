@@ -1,0 +1,39 @@
+/*
+Node and Edge Properties:
+
+id: Unique identifier for the node or edge.
+type: Type or category of the node or edge, which can be used to correlate with domain metadata and texture maps.
+additional_properties: Custom properties specific to the node or edge (if needed).
+*/
+{
+  "nodes": [
+    {
+      "id": "node1",
+      "type": "node_type_1",
+      "additional_properties": { /* Custom properties specific to the node */ }
+    },
+    {
+      "id": "node2",
+      "type": "node_type_2",
+      "additional_properties": { /* Custom properties specific to the node */ }
+    },
+    // Additional nodes...
+  ],
+  "edges": [
+    {
+      "id": "edge1",
+      "source": "node1",
+      "target": "node2",
+      "type": "edge_type_1",
+      "additional_properties": { /* Custom properties specific to the edge */ }
+    },
+    {
+      "id": "edge2",
+      "source": "node2",
+      "target": "node3",
+      "type": "edge_type_2",
+      "additional_properties": { /* Custom properties specific to the edge */ }
+    },
+    // Additional edges...
+  ]
+}
