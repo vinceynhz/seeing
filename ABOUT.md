@@ -1,6 +1,6 @@
-## Seeing is believing...
+# About the process
 
-This project involves generating 3D graph visualizations from domain-specific data, utilizing a general graph model with simplified visual properties and interactive web-based rendering, to facilitate data exploration and comprehension.
+This application 
 
 ### Step 1: Define Domain and Data Structure
 
