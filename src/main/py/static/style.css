@@ -16,6 +16,10 @@ h1 {
   padding: 0;
 }
 
+canvas {
+  display: block;
+}
+
 #info {
   position: absolute;
   font-size: 12px;
@@ -34,4 +38,25 @@ h1 {
   color: lightcyan;
   font-size: 11px;
   overflow: auto;
+}
+
+#coord {
+  position: absolute;
+  padding: 10px;
+  right: 0;
+  bottom: 0;
+}
+
+#label {
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+  color: black;
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
 }

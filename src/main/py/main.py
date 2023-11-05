@@ -23,12 +23,12 @@ def root():
     return render_template('index.html')
 
 
-@app.route("/data/groups", methods=["GET"])
+@app.route("/data/organisms", methods=["GET"])
 def get_groups():
     return jsonify(groups)
 
 
-@app.route("/data/tactics", methods=["GET"])
+@app.route("/data/families", methods=["GET"])
 def get_tactics():
     return jsonify(tactics)
 
@@ -111,7 +111,8 @@ def init():
 
     # For now we'll need a local copy of the MITRE Att&ck matrix. If this is parameter is not passed, the matrix will be
     # retrieved from the attach-stix-data GitHub repository
-    attack_source = mitre.init_mitre_matrix("../attack-stix-data/enterprise-attack/enterprise-attack.json")
+    # attack_source = mitre.init_mitre_matrix("../attack-stix-data/enterprise-attack/enterprise-attack.json")
+    attack_source = mitre.init_mitre_matrix()
     tactics = mitre.extract_tactics(attack_source)
     groups = mitre.extract_groups(attack_source)
 
